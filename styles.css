@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2F2235;
+}
+
+.pattern {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding-left: 2em;
+}
+
+.party {
+  color: #34D1D1;
+}
+
+.my-name {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding-right: 2em;
+}
+
+.accordian-break {
+  display: flex;
+  justify-content: center;
+}
+
+.accordian {
+  margin-left: 3.7em;
+  margin-top: 40px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+}
+
+hr {
+   margin-top: 50px;
+   margin-left: 30px;
+   display: inline-block;
+   position: relative;
+   width: 70%;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}

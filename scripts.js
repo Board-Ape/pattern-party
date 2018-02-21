@@ -1,12 +1,31 @@
-const changeTab = (event) => {
-  const clickedTab = $(event.target);
-  const divToShow = $(`#${clickedTab.data('tab')}`);
-
-  $('.tab-content').css('display', 'none');
-  divToShow.css('display', 'flex')
-
-  $('.tab').removeClass('active-tab');
-  clickedTab.addClass('active-tab');
+const toggleTab = id => {
+  $('.tab-viewing').removeClass('tab-viewing');
+  $(`#${id}`).addClass('tab-viewing');
 }
 
-$('.tab').on('click', (event) => changeTab(event));
+const toggleMinMax = id => {
+  $('.tab-viewing .min-max').text('+');
+  $(`#${id} .min-max`).text('—');
+}
+
+const toggleCard = idNum => {
+  $('.tab-card-viewing').removeClass('tab-card-viewing');
+  $(`#tab-card${idNum}`).addClass('tab-card-viewing');
+}
+
+const toggleTabsView = event => {
+  const id = event.target.id;
+  const idNum = id.substr(id.length - 1);
+  toggleMinMax(id);
+  toggleTab(id);
+  toggleCard(idNum);
+}
+
+$('.tab').click(event => toggleTabsView(event));
+
+const toggleHeader = () => {
+  $('.nav-link').toggleClass('show');
+  $('.header-search-box').toggleClass('show')
+}
+
+$('#header-menu').click(toggleHeader);

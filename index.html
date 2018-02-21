@@ -2,172 +2,164 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Pattern Party</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Pattern Party</title>
   </head>
   <body>
     <header>
-      <article>
-        <h1 class="pattern">Pattern <span class="party">Party</span></h1>
-      </article>
-      <article>
-        <h1 class="my-name">Sam Singer</h1>
-      </article>
+      <p id="title">PATTRN <span>PARTY</span></p>
+      <hr />
+      <p>Samuel Singer</p>
     </header>
-    <section>
-      <article class="accordian-break">
-        <h2 class="accordian">ACCORDIAN TABS</h2><hr></hr>
-      </article>
-    </section>
-      <div class="tab-container">
-        <div class="tab tab-1 active-tab" data-tab="tab1">
-          Tab 1<span class="plus">+</span>
-        </div>
-        <div class="tab tab-2 inactive-tab" data-tab="tab2">
-          Tab 2<span class="plus">+</span>
-        </div>
-        <div class="tab tab-3 inactive-tab" data-tab="tab3">
-          Tab 3<span class="plus">+</span>
-        </div>
-        <div class="tab tab-4 inactive-tab" data-tab="tab4">
-          Tab 4<span class="plus">+</span>
-        </div>
-      </div>
-     <div class="main-container">
-      <div class="tab-content tab-content-1" id="tab1">
-        <img src="./coffee-cream.jpg" alt="">
-        <div class="text-container">
-          <h4>Delicious Coffee Drink</h4>
-          <p class="paragraph-1">
+    <div class="divider">
+      <p>ACCORDIAN TABS</p>
+      <hr />
+    </div>
+    <section id="accordian-tabs">
+      <div class="tab tab-viewing" id="tab1"><p>Tab 1<p><p class="min-max">—</p></div>
+      <div class="tab" id="tab2"><p>Tab 2<p><p class="min-max">+</p></div>
+      <div class="tab" id="tab3"><p>Tab 3<p><p class="min-max">+</p></div>
+      <div class="tab" id="tab4"><p>Tab 4<p><p class="min-max">+</p></div>
+      <article class="tab-card tab-card-viewing" id="tab-card1">
+        <img src="./coffee-cream.jpg" alt="Cream into coffee" class="portrait" />
+        <img src="./coffee-cream.jpg" alt="Cream into coffee" class="landscape" />
+        <div class="tab-card-text">
+          <p class="first-line">Creamy poured into an iced coffee</p>
+          <hr />
+          <p class="body1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Nullam semper enim ac lacus placerat posuere.
             Mauris gravida ante ut tincidunt tincidunt.
             Nulla tempor auctor egestas. Etiam mattis scelerisque nulla,
             non ultrices dolor pharetra sit amet.
           </p>
-
-          <p class="paragraph-1">
+          <p class="body2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Ut id tellus in mauris lacinia interdum id eget ante.
             Vestibulum pharetra, metus eget aliquam lobortis, dui diam.
           </p>
         </div>
-      </div>
-      <div class="tab-content tab-content-2" id="tab2">
-        <img src="./cup-ice-cream.jpg" alt="">
-        <div class="text-container">
-          <h4>Small Ice Cream With Fruit</h4>
-          <p class="paragraph-1">
+      </article>
+      <article class="tab-card" id="tab-card2">
+        <img src="./cup-ice-cream.jpg" alt="Yogurt cup with berries" class="portrait" />
+        <img src="./cup-ice-cream.jpg" alt="Yogurt cup with berries" class="landscape" />
+        <div class="tab-card-text">
+          <p class="first-line">Delicious yogurt with berries</p>
+          <hr />
+          <p class="body1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque vestibulum porttitor turpis ac elementum.
-            Praesent ultrices luctus accumsan. Morbi fermentum tristique quam.
-            Sed euismod quis odio non finibus. Aliquam erat volutpat.
+            Nullam semper enim ac lacus placerat posuere.
+            Mauris gravida ante ut tincidunt tincidunt.
+            Nulla tempor auctor egestas. Etiam mattis scelerisque nulla,
+            non ultrices dolor pharetra sit amet.
           </p>
-
-          <p class="paragraph-1">
+          <p class="body2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenean massa neque, efficitur id magna id, vulputate sodales lorem.
-            In hac habitasse platea dictumst. Sed dictum
-          </p>
-        </div>
-      </div>
-      <div class="tab-content tab-content-3" id="tab3">
-        <img src="./floating-ice-cream.jpg" alt="">
-        <div class="text-container">
-          <h4>Magical Ice Cream Cone</h4>
-          <p class="paragraph-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer sit amet urna quis ligula eleifend bibendum.
-            Pellentesque eget dolor ullamcorper, aliquam nunc a, ultricies ex.
-            Nulla ornare, eros rutrum tempus ornare, sapien nisi interdum augue.
-          </p>
-
-          <p class="paragraph-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Ut fringilla porta neque, nec rutrum dui rhoncus et.
-            Sed cursus id lectus ac pretium. Curabitur pretium mollis.
+            Ut id tellus in mauris lacinia interdum id eget ante.
+            Vestibulum pharetra, metus eget aliquam lobortis, dui diam.
           </p>
         </div>
-      </div>
-      <div class="tab-content tab-content-4" id="tab4">
-        <img src="./glass-yogurt.jpg" alt="">
-        <div class="text-container">
-          <h4>Parfait Inside A Tall Glass</h4>
-          <p class="paragraph-1">
+      </article>
+      <article class="tab-card" id="tab-card3">
+        <img src="./floating-ice-cream.jpg" alt="Floating ice cream with a macaron" class="portrait" />
+        <img src="./floating-ice-cream.jpg" alt="Floating ice cream with a macaron" class="landscape" />
+        <div class="tab-card-text">
+          <p class="first-line">Magical ice cream cone with a macaron/p>
+          <hr />
+          <p class="body1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer molestie odio suscipit, molestie mauris nec, egestas turpis.
-            Donec rutrum nisi vitae tempor vestibulum.
-            Proin consectetur ex et elit cursus, ut rutrum ipsum placerat.
-           </p>
-
-          <p class="paragraph-1">
+            Nullam semper enim ac lacus placerat posuere.
+            Mauris gravida ante ut tincidunt tincidunt.
+            Nulla tempor auctor egestas. Etiam mattis scelerisque nulla,
+            non ultrices dolor pharetra sit amet.
+          </p>
+          <p class="body2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Mauris vel vestibulum quam. Quisque in nisl laoreet, blandit lectus vel,congue augue.
-            ßNam lacinia sapien vel auctor.
-            <p>
+            Ut id tellus in mauris lacinia interdum id eget ante.
+            Vestibulum pharetra, metus eget aliquam lobortis, dui diam.
+          </p>
         </div>
-      </div>
+      </article>
+      <article class="tab-card" id="tab-card4">
+        <img src="./glass-yogurt.jpg" alt="A tall glass cup of yogurt with frozen raspberries" class="portrait" />
+        <img src="./glass-yogurt.jpg" alt="A tall glass cup of yogurt with frozen raspberries" class="landscape" />
+        <div class="tab-card-text">
+          <p class="first-line">Frozen raspberries with yogurt/p>
+          <hr />
+          <p class="body1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nullam semper enim ac lacus placerat posuere.
+            Mauris gravida ante ut tincidunt tincidunt.
+            Nulla tempor auctor egestas. Etiam mattis scelerisque nulla,
+            non ultrices dolor pharetra sit amet.
+          </p>
+          <p class="body2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ut id tellus in mauris lacinia interdum id eget ante.
+            Vestibulum pharetra, metus eget aliquam lobortis, dui diam.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <a href="https://codepen.io/Singersy/pen/RQJbJN" target="_blank">VIEW CODE</a>
+    <div class="divider">
+      <p>FLEXIBLE CARDS</p>
+      <hr />
     </div>
-    <a href="https://codepen.io/Singersy/pen/zRKQeG" class="code-button" target="_blank">VIEW CODE</a>
-    <section class="flex-card-container">
-      <div class="flex-card f1">
-        <div class="card-header">
-          <h6 class="card-head-text">Ice Cream Is My Passion</h6>
-        </div>
+    <section class="flexible-cards">
+      <div class="card hide" id="card1">
+        <p>Lorem ipsum dolor sit</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R1jlxuE9xjLEzw9Q9yAzs7Jqwy8VSOBNX_vTmjciJIBAavO_" alt="placeholder" />
       </div>
-      <div class="flex-card f2">
-        <div class="card-header">
-          <h6 class="card-head-text">Ice Cream Is My Passion</h6>
-        </div>
+      <div class="card">
+        <p>Lorem ipsum</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R1jlxuE9xjLEzw9Q9yAzs7Jqwy8VSOBNX_vTmjciJIBAavO_" alt="placeholder" />
       </div>
-      <div class="flex-card f3">
-        <div class="card-header">
-          <h6 class="card-head-text">Ice Cream Is My Passion</h6>
-        </div>
+      <div class="card">
+        <p>Lorem ipsum dolor sit</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R1jlxuE9xjLEzw9Q9yAzs7Jqwy8VSOBNX_vTmjciJIBAavO_" alt="placeholder" />
       </div>
-      <div class="flex-card f4">
-        <div class="card-header">
-          <h6 class="card-head-text">Ice Cream Is My Passion</h6>
-        </div>
+      <div class="card">
+        <p>Lorem ipsum dolor sit amet</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R1jlxuE9xjLEzw9Q9yAzs7Jqwy8VSOBNX_vTmjciJIBAavO_" alt="placeholder" />
       </div>
-      <div class="flex-card f5">
-        <div class="card-header">
-          <h6 class="card-head-text">Ice Cream Is My Passion</h6>
-        </div>
+      <div class="card hide">
+        <p>Lorem ipsum</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R1jlxuE9xjLEzw9Q9yAzs7Jqwy8VSOBNX_vTmjciJIBAavO_" alt="placeholder" />
       </div>
-      <div class="flex-card f6">
-        <div class="card-header">
-          <h6 class="card-head-text">Ice Cream Is My Passion</h6>
-        </div>
+      <div class="card hide">
+        <p>Lorem ipsum</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R1jlxuE9xjLEzw9Q9yAzs7Jqwy8VSOBNX_vTmjciJIBAavO_" alt="placeholder" />
       </div>
-      <div class="flex-card f7">
-        <div class="card-header">
-          <h6 class="card-head-text">Ice Cream Is My Passion</h6>
-        </div>
+      <div class="card hide" id="card7">
+        <p>Lorem ipsum dolor sit</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R1jlxuE9xjLEzw9Q9yAzs7Jqwy8VSOBNX_vTmjciJIBAavO_" alt="placeholder" />
       </div>
     </section>
 
-    <div class="header-bar">
-      <div class="circle">
-        <div class="the-circle">
-        </div>
-      </div>
-      <div class="nav-1">
-        <h6>Navigation Link 1</h6>
-      </div>
-      <div class="nav-2">
-        <h6>Navigation Link 2</h6>
-      </div>
-      <div class="nav-3">
-        <h6>Navigation Link 3</h6>
-      </div>
-      <div class="search">
-        <img src="search.svg" class="search-img" alt="">
-        <h6>Search</h6>
-      </div>
+    <a href="https://codepen.io/Singersy/pen/LQrPgo" target="_blank">VIEW CODE</a>
+    <div class="divider">
+      <p>HEADER BAR</p>
+      <hr />
     </div>
+    <article id="header-bar">
+      <div id="avatar-box">
+        <img id="avatar" src="http://www.csuniv.edu/_resources/images/faculty-placeholder.png" alt="placeholder avatar" />
+        <p id="header-menu">MENU</p>
+      </div>
+      <p class="nav-link first-link">Navigation Link 1</p>
+      <p class="nav-link">Navigation Link 2</p>
+      <p class="nav-link">Navigation Link 3</p>
+      <div class="header-search-box">
+        <img id="header-search-icon" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png" alt="search icon" />
+        <input id="header-search-input" type="text" placeholder="Search" />
+      </div>
+    </article>
+    <a href="https://codepen.io/Singersy/pen/YevKdP" target="_blank">VIEW CODE</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="./scripts.js"></script>
   </body>
-  <script src="scripts.js"></script>
 </html>
